@@ -1,0 +1,30 @@
+function [teoplesM1 teoplesM2 teoplesM3 teoplesM4 teoplesM5 vfinal tfinal] = StemXN(m,n,l)
+
+    alfa = m / (m+l);
+    tvector = [];
+    
+    for i = 1:(n*(m+l))
+       tvector = [tvector alfa]; 
+    end
+
+    vectores = round(10 * rand(n,m));
+    f = [];    
+    
+    for i = 1:n        
+        vector = vectores(i,:);
+        svector = subvector(vector,l);
+        nv = [svector vector];
+        
+        if i = 1
+            
+        elseif i = 2
+
+        elseif i = 2            
+        f = [f,nv];        
+    end
+    
+    tfinal = tvector;
+    vfinal = f;
+    
+return
+
